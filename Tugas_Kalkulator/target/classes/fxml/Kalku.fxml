@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="controler.KalkulatorBMIController">
+   <children>
+      <TextField fx:id="txtBerat" layoutX="58.0" layoutY="148.0" prefHeight="41.0" prefWidth="483.0" />
+      <TextField fx:id="txtTinggi" layoutX="58.0" layoutY="231.0" prefHeight="41.0" prefWidth="483.0" />
+      <Label layoutX="268.0" layoutY="131.0" text="Berat Badan" />
+      <Label layoutX="265.0" layoutY="213.0" text="Tinggi Badan" />
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="114.0" layoutY="12.0" prefHeight="41.0" prefWidth="372.0" text="Kalkulator BMI (Badan Masa Tumbuh) " textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="55.0" layoutY="78.0" prefHeight="40.0" prefWidth="200.0" />
+      <ToggleButton fx:id="btnPerempuan" layoutX="307.0" layoutY="78.0" mnemonicParsing="false" onAction="#pilihPerempuan" prefHeight="40.0" prefWidth="233.0" text="Perempuan" />
+      <Button fx:id="btnHitung" layoutX="183.0" layoutY="285.0" mnemonicParsing="false" onAction="#hitungBMI" prefHeight="33.0" prefWidth="233.0" text="Hitung BMI saya" />
+      <ToggleButton fx:id="btnLakiLaki" layoutX="58.0" layoutY="77.0" mnemonicParsing="false" onAction="#pilihLakiLaki" prefHeight="41.0" prefWidth="233.0" text="Laki-laki" />
+      <Label fx:id="lblHasil" layoutX="143.0" layoutY="336.0" prefHeight="49.0" prefWidth="313.0" />
+   </children>
+</AnchorPane>
